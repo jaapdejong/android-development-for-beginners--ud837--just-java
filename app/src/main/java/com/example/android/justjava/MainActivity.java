@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
         displayMessage(message);
 
         // Send an email
-        String subject = "JustJava order for Kaptain Kunal";
+        String subject = getString(R.string.email_subject);
         sendEmail(subject, message);
     }
 
@@ -99,12 +99,12 @@ public class MainActivity extends AppCompatActivity {
      * @return text summary
      */
     private String createOrderSummary(String user, int price, boolean addWhippedCream, boolean addChocolate) {
-        String priceMessage = "Name: " + user;
-        priceMessage += "\nAdd whipped cream? " + addWhippedCream;
-        priceMessage += "\nAdd chocolate? " + addChocolate;
-        priceMessage += "\nQuantity: " + quantity;
-        priceMessage += "\nTotal: $" + price;
-        priceMessage += "\nThank you!";
+        String priceMessage = getString(R.string.name) + ": " + user;
+        priceMessage += "\n" + getString(R.string.add_whipped_cream) + " " + addWhippedCream;
+        priceMessage += "\n" + getString(R.string.add_chocolate) + " " + addChocolate;
+        priceMessage += "\n" + getString(R.string.quantity) + ": " + quantity;
+        priceMessage += "\n" + getString(R.string.total) + ": $" + price;
+        priceMessage += "\n" + getString(R.string.thank_you);
         return priceMessage;
     }
 
