@@ -43,13 +43,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void sendEmail(String subject, String message) {
         Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
-        emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[] {""});
+        emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{""});
         emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, subject);
         emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, message);
         emailIntent.setType("text/plain");
         startActivity(emailIntent);
     }
-    
+
     /**
      * This method is called when the order button is clicked.
      */

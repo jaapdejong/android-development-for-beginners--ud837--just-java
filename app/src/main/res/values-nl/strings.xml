@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="name">Naam</string>
-    <string name="toppings">Topping</string>
+    <string name="toppings">Ingredienten</string>
     <string name="whipped_cream">Slagroom</string>
     <string name="chocolate">Chocolade</string>
     <string name="quantity">Hoeveelheid</string>
